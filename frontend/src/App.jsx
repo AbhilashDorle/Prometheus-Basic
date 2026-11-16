@@ -7,10 +7,9 @@ function App() {
   async function changeCount(action) {
   try {
     console.log(count)
-    const response = await fetch(
-      `http://localhost:3001/api/${action}`,
-      { method: 'POST' }
-    )
+    const response = await fetch(`/api/${action}`, {
+  method: 'POST',
+})
 
     if (!response.ok) {
       throw new Error(`Request failed: ${response.status}`)

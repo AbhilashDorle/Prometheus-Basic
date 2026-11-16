@@ -1,0 +1,21 @@
+# macOS
+.DS_Store
+
+# Exported container images
+*.tar
+*.tar.gz
+
+# Dependencies and generated output
+node_modules/
+dist/
+coverage/
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+.kube/
+kubeconfig
+
+# Logs
+*.log
